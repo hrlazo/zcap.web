@@ -10,7 +10,9 @@ import cl.inacap.zCapModel.dto.Consola;
 public interface ConsolaDAOLocal {
 
 	void save(Consola consola);
-		List<Consola> getAll();
+	List<Consola> getAll();
 	void delete(Consola consola);
-		List<Consola> filterByName(String nombre);
+	List<Consola> filterByName(String nombre);
+	
+		
 }

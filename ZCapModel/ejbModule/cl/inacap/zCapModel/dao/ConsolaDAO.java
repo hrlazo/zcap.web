@@ -17,10 +17,6 @@ import cl.inacap.zCapModel.dto.Consola;
 public class ConsolaDAO implements ConsolaDAOLocal {
     
 	public static List<Consola> consolas = new ArrayList<>();
-	
-    public ConsolaDAO() {
-        // TODO Auto-generated constructor stub
-    }
 
 	@Override
 	public void save(Consola consola) {
