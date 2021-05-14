@@ -34,7 +34,7 @@ public class VideojuegoDAO implements VideojuegoDAOLocal {
 
 	@Override
 	public List<Videojuego> filterByName(String nombre) {
-		return videojuegos.stream().filter(j->j.getNombreJuego().contains(nombre)).collect(Collectors.toList());
+		return videojuegos.stream().filter(j->j.getNombreJuego().toLowerCase().contains(nombre.toLowerCase())).collect(Collectors.toList());
 	}
 	
 
